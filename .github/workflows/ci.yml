@@ -1,65 +1,45 @@
-name: Python Application CI
+# .github/workflows/ci.yml
 
-# Controls when the workflow will run
+name: Python Application CI with Codecov
+
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # We'll use a strategy to test on a specific Python version
     strategy:
       matrix:
         python-version: ["3.8"]
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Step 1: Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Python environment
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
-      # Step 3: Install dependencies
-      # It's good practice to upgrade pip first
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install flake8 pytest # Ensure linters/testers are installed
 
-      # Step 4: Lint with flake8
-      # This step will fail the workflow if flake8 finds issues
       - name: Lint with flake8
         run: |
-          # stop the build if there are Python syntax errors or undefined names
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-      # Step 5: Test with pytest
-      # This step will run your unit tests from test_ml.py
-      - name: Test with pytest
+      - name: Test with pytest and generate coverage report
         run: |
-          pytest
+          python -m pytest --cov=ml --cov-report=xml
 
-      # Step 6: (Optional but Recommended) Run the training pipeline
-      # This ensures that your entire pipeline runs without errors in the CI environment
-      - name: Run training pipeline script
-        run: |
-          python train_model.py
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

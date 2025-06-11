@@ -7,3 +7,4 @@ requests
 joblib
 ucimlrepo
 flake8
+pytest-cov
