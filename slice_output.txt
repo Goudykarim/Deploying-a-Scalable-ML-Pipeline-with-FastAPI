@@ -1,0 +1,113 @@
+--- Performance for feature: workclass ---
+'Private' - Precision: 0.7385, Recall: 0.6034, F1: 0.6642
+'Local-gov' - Precision: 0.6959, Recall: 0.6611, F1: 0.6781
+'Self-emp-not-inc' - Precision: 0.6966, Recall: 0.5611, F1: 0.6216
+'Federal-gov' - Precision: 0.7778, Recall: 0.6863, F1: 0.7292
+'State-gov' - Precision: 0.7733, Recall: 0.5800, F1: 0.6629
+'Self-emp-inc' - Precision: 0.8171, Recall: 0.8034, F1: 0.8102
+'Without-pay' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+
+--- Performance for feature: education ---
+'Some-college' - Precision: 0.7068, Recall: 0.5142, F1: 0.5953
+'Prof-school' - Precision: 0.8626, Recall: 0.9339, F1: 0.8968
+'Bachelors' - Precision: 0.7852, Recall: 0.7220, F1: 0.7523
+'Assoc-voc' - Precision: 0.6750, Recall: 0.5567, F1: 0.6102
+'Doctorate' - Precision: 0.8000, Recall: 0.8718, F1: 0.8344
+'HS-grad' - Precision: 0.5872, Recall: 0.4085, F1: 0.4818
+'Masters' - Precision: 0.8157, Recall: 0.8628, F1: 0.8386
+'10th' - Precision: 0.8571, Recall: 0.3000, F1: 0.4444
+'Assoc-acdm' - Precision: 0.6964, Recall: 0.5652, F1: 0.6240
+'9th' - Precision: 1.0000, Recall: 0.0833, F1: 0.1538
+'5th-6th' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'11th' - Precision: 0.8333, Recall: 0.2778, F1: 0.4167
+'7th-8th' - Precision: 0.5000, Recall: 0.0909, F1: 0.1538
+'12th' - Precision: 0.6667, Recall: 0.2500, F1: 0.3636
+'1st-4th' - Precision: 1.0000, Recall: 0.5000, F1: 0.6667
+'Preschool' - Precision: 0.0000, Recall: 1.0000, F1: 0.0000
+
+--- Performance for feature: marital-status ---
+'Never-married' - Precision: 0.8611, Recall: 0.3780, F1: 0.5254
+'Married-civ-spouse' - Precision: 0.7338, Recall: 0.6705, F1: 0.7007
+'Divorced' - Precision: 0.7818, Recall: 0.3496, F1: 0.4831
+'Separated' - Precision: 1.0000, Recall: 0.1176, F1: 0.2105
+'Widowed' - Precision: 0.8889, Recall: 0.3077, F1: 0.4571
+'Married-spouse-absent' - Precision: 0.6667, Recall: 0.2857, F1: 0.4000
+'Married-AF-spouse' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+
+--- Performance for feature: occupation ---
+'Adm-clerical' - Precision: 0.6434, Recall: 0.4770, F1: 0.5479
+'Prof-specialty' - Precision: 0.7743, Recall: 0.7743, F1: 0.7743
+'Protective-serv' - Precision: 0.6591, Recall: 0.4677, F1: 0.5472
+'Exec-managerial' - Precision: 0.7853, Recall: 0.7500, F1: 0.7672
+'Craft-repair' - Precision: 0.6198, Recall: 0.4375, F1: 0.5129
+'Sales' - Precision: 0.7699, Recall: 0.6548, F1: 0.7077
+'Other-service' - Precision: 0.8333, Recall: 0.2500, F1: 0.3846
+'Handlers-cleaners' - Precision: 0.6364, Recall: 0.2121, F1: 0.3182
+'Transport-moving' - Precision: 0.6406, Recall: 0.4457, F1: 0.5256
+'Machine-op-inspct' - Precision: 0.6757, Recall: 0.3205, F1: 0.4348
+'Tech-support' - Precision: 0.7391, Recall: 0.5862, F1: 0.6538
+'Farming-fishing' - Precision: 0.7647, Recall: 0.4333, F1: 0.5532
+'Priv-house-serv' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Armed-Forces' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+
+--- Performance for feature: relationship ---
+'Own-child' - Precision: 1.0000, Recall: 0.2727, F1: 0.4286
+'Husband' - Precision: 0.7354, Recall: 0.6738, F1: 0.7033
+'Unmarried' - Precision: 0.9167, Recall: 0.2075, F1: 0.3385
+'Wife' - Precision: 0.7231, Recall: 0.6558, F1: 0.6878
+'Not-in-family' - Precision: 0.8160, Recall: 0.3893, F1: 0.5271
+'Other-relative' - Precision: 0.5000, Recall: 0.1429, F1: 0.2222
+
+--- Performance for feature: race ---
+'White' - Precision: 0.7408, Recall: 0.6268, F1: 0.6790
+'Black' - Precision: 0.7606, Recall: 0.5143, F1: 0.6136
+'Asian-Pac-Islander' - Precision: 0.7692, Recall: 0.6849, F1: 0.7246
+'Other' - Precision: 0.8333, Recall: 0.5556, F1: 0.6667
+'Amer-Indian-Eskimo' - Precision: 0.3750, Recall: 0.3750, F1: 0.3750
+
+--- Performance for feature: sex ---
+'Female' - Precision: 0.7583, Recall: 0.5156, F1: 0.6138
+'Male' - Precision: 0.7387, Recall: 0.6421, F1: 0.6871
+
+--- Performance for feature: native-country ---
+'Nicaragua' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'United-States' - Precision: 0.7394, Recall: 0.6255, F1: 0.6777
+'Jamaica' - Precision: 1.0000, Recall: 0.2500, F1: 0.4000
+'Italy' - Precision: 0.8333, Recall: 0.5556, F1: 0.6667
+'Germany' - Precision: 0.8750, Recall: 0.7000, F1: 0.7778
+'Cuba' - Precision: 0.7500, Recall: 0.5000, F1: 0.6000
+'Scotland' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Canada' - Precision: 0.8333, Recall: 0.4545, F1: 0.5882
+'Philippines' - Precision: 0.9091, Recall: 0.6250, F1: 0.7407
+'Mexico' - Precision: 0.6667, Recall: 0.4444, F1: 0.5333
+'India' - Precision: 0.7647, Recall: 0.6842, F1: 0.7222
+'Japan' - Precision: 0.6000, Recall: 0.7500, F1: 0.6667
+'Cambodia' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Dominican-Republic' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Iran' - Precision: 0.5000, Recall: 0.7500, F1: 0.6000
+'Ireland' - Precision: 1.0000, Recall: 0.3333, F1: 0.5000
+'Vietnam' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'El-Salvador' - Precision: 1.0000, Recall: 0.3333, F1: 0.5000
+'Puerto-Rico' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Hungary' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'Guatemala' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'China' - Precision: 0.5455, Recall: 1.0000, F1: 0.7059
+'Outlying-US(Guam-USVI-etc)' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Laos' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Peru' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'France' - Precision: 0.6667, Recall: 0.4000, F1: 0.5000
+'England' - Precision: 0.8333, Recall: 0.6250, F1: 0.7143
+'Ecuador' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Columbia' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Thailand' - Precision: 1.0000, Recall: 0.5000, F1: 0.6667
+'Poland' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'Portugal' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'Taiwan' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+'Greece' - Precision: 0.7500, Recall: 1.0000, F1: 0.8571
+'South' - Precision: 0.0000, Recall: 1.0000, F1: 0.0000
+'Haiti' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'Honduras' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'Yugoslavia' - Precision: 1.0000, Recall: 0.0000, F1: 0.0000
+'Hong' - Precision: 1.0000, Recall: 0.6667, F1: 0.8000
+'Trinadad&Tobago' - Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+
