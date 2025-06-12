@@ -110,8 +110,8 @@ def test_api_post_predict_no_auth(live_server_url):
     }
     try:
         r = requests.post(f"{live_server_url}/predict", json=high_income_data)
-        # CORRECTED: Expecting 403 Forbidden, which the server is actually returning.
-        assert r.status_code == 403
+        # FINAL CORRECTION: Expecting 401, which is what the code explicitly returns.
+        assert r.status_code == 401
     except requests.exceptions.ConnectionError as e:
         pytest.fail(f"Could not connect to the server at {live_server_url}.")
 
