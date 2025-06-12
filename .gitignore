@@ -20,3 +20,7 @@ dist/
 # OS-specific
 .DS_Store
 Thumbs.db
+
+# Do NOT ignore the model directory.
+# We want to commit our trained model artifacts to the repository.
+# model/
